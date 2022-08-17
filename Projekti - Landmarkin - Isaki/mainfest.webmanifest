@@ -1,0 +1,5 @@
+{
+    "icons": [
+        { "src": "etc/icon-192.png", "type": "image/png", "sizes": "192x192" } { "src": "etc/icon-192.png", "type": "image/png", "sizes": "192x192" } { "src": "etc/icon-512.png", "type": "image/png", "sizes": "512x512" } { "src": "etc/icon-192.png", "type": "image/png", "sizes": "192x192" }
+    ]
+}

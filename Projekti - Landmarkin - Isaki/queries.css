@@ -1,0 +1,517 @@
+/* 1344 / 16 */
+
+
+/* Below 1344px (Samller desktops) */
+
+@media (max-width: 84em) {
+    .heading-3 {
+        font-size: 3.8rem;
+    }
+    .heading-4 {
+        font-size: 2.4rem;
+    }
+    .under-section-who.grid-cols--3 {
+        padding-top: 1.6rem;
+        gap: 10rem;
+    }
+    .heading-5 {
+        /* font-size: 2.2rem; */
+    }
+    .paragraf-5 {
+        letter-spacing: 1.1px;
+        line-height: 1.1;
+        /* font-size: 1.4rem; */
+    }
+    .who-imgs {
+        width: 100%;
+        height: 17rem;
+    }
+    .heading-software-second {
+        font-size: 2.2rem;
+    }
+    .software-description {
+        font-size: 1.3rem;
+    }
+    .step-img {
+        width: 90%;
+        height: auto;
+    }
+    .step-n-description {
+        line-height: 1.8;
+    }
+    .section-software {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .grid-cols--5 {
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+
+/* below 1200px (Landscape Tablets) */
+
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+    .heading-primary {
+        font-size: 7.4rem;
+        margin-top: 20rem;
+    }
+    .heading-primary-under {
+        font-size: 2.6rem;
+    }
+    .heading-3 {
+        font-size: 3.2rem;
+    }
+    .heading-6 {
+        font-size: 4rem;
+    }
+    .step-description {
+        line-height: 1.6;
+    }
+    .grid--footer {
+        gap: 4rem;
+    }
+    .grid-cols--2 {
+        gap: 7.6rem;
+    }
+    .grid--2-cols-where {
+        gap: 3.2rem;
+    }
+    .main-nav-list {
+        gap: 3rem;
+    }
+    .step-n-description {
+        line-height: 1.6;
+    }
+    .under-section-who.grid-cols--3 {
+        gap: 8rem;
+    }
+}
+
+
+/* below 944px (Tablets) */
+
+@media (max-width: 59em) {
+    html {
+        /* 8px  / 16px = 0.5 = 50% */
+        font-size: 50%;
+    }
+    .main-nav-list {
+        gap: 2.4rem;
+    }
+    .heading-primary {
+        font-size: 6.8rem;
+    }
+    .heading-primary-under {
+        font-size: 2.4rem;
+    }
+    .heading-3 {
+        font-size: 2.8rem;
+    }
+    .grid-cols--2 {
+        gap: 6rem;
+    }
+    .heading-6 {
+        font-size: 3.8rem;
+    }
+    .grid-cols--3 {
+        gap: 3rem;
+    }
+    .feature-title {
+        font-size: 1.6rem;
+    }
+    .feature-paragraf {
+        line-height: 1.2;
+    }
+    .heading-5 {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1.6rem;
+    }
+    .paragraf-5 {
+        letter-spacing: 1.1px;
+        line-height: 1.05;
+        font-size: 1.4rem;
+    }
+    .grid-cols--5 {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        justify-content: center;
+        /* align-items: center; */
+        column-gap: 10rem;
+    }
+    .icons-software-first {
+        padding-top: 2.4rem;
+    }
+    .heading-software {
+        padding-top: 1rem;
+    }
+    .software-descripiton {
+        padding-bottom: 0rem;
+    }
+    .section-how,
+    .section-who,
+    .section-how-we,
+    .section-software,
+    .section-networking {
+        padding-top: 4.8rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-bottom: 4.2rem;
+    }
+    .section-where-are-we {
+        padding-top: 4.8rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-bottom: 6.4rem;
+    }
+    .section-software {
+        padding-bottom: 0rem;
+    }
+    .section-networking {
+        padding-top: 0rem;
+    }
+    .footer {
+        padding: 2.8rem;
+    }
+    .step-description {
+        line-height: 2rem;
+    }
+    .heading-software {
+        font-size: 1.6rem;
+    }
+    .software-descripiton {
+        line-height: 1.6rem;
+        font-size: 1.1rem;
+    }
+    .grid--footer {
+        gap: 2.8rem;
+        justify-self: center;
+        justify-items: center;
+    }
+    /* mobile navigation */
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+    .main-nav {
+        position: absolute;
+        background-color: #000;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        /* Hide Navigation */
+        /* display: none; */
+        /* 1) */
+        opacity: 0;
+        /* 2) make it unaccessible to mouse and keyboard */
+        pointer-events: none;
+        /* 3) hide it from screen readers */
+        visibility: hidden;
+    }
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translate(0);
+    }
+    .nav-open .icon-mobile-nav[name="close"] {
+        display: block;
+    }
+    .nav-open .icon-mobile-nav[name="menu"] {
+        display: none;
+    }
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+    }
+}
+
+
+/* below 704px (Smaller Tablets) */
+
+@media (max-width: 44em) {
+    .under-section-who.grid-cols--3,
+    .grid-cols--5 {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+        grid-template: 10rem;
+        /* text-align: center; */
+    }
+    .who-imgs {
+        height: 22rem;
+    }
+    .paragraf-5 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+    /* .dynamic {
+        grid-column: -3/-1;
+        justify-content: center;
+    } */
+    .grid-cols--5 {
+        gap: 2rem;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    .dynamic {
+        grid-column: -3/-1;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+    }
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .footer {
+        padding: 5.2rem;
+    }
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+    .logo-col,
+    .address-col {
+        grid-column: span 3;
+    }
+}
+
+
+/*below 624px (phones)*/
+
+@media (max-width: 39em) {
+    html {
+        font-size: 48%;
+    }
+    .section-land {
+        display: flex;
+        height: 80vh;
+        /* position: relative; */
+        background-image: linear-gradient(rgba(6, 6, 6, 0.7), rgba(0, 0, 0, 0.7)), url(etc/img4.jpg);
+        background-size: cover;
+        color: fff;
+    }
+    .software-descripiton {
+        font-size: 1.6rem;
+    }
+    .grid-cols--3 {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0rem;
+    }
+    /* .center-later {
+        grid-column: span 2;
+        grid-column: -3/-1;
+        justify-self: center;
+    } */
+    .grid-cols--5 {
+        justify-items: start;
+    }
+    .dynamic {
+        grid-column: span 2;
+        grid-column: -3/-1;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+    }
+    .heading-3 {
+        font-size: 2.6rem;
+    }
+    .heading-4 {
+        font-size: 2.2rem;
+    }
+    .heading-where,
+    .heading-networking,
+    .heading-how-we,
+    .heading-software-first {
+        font-size: 3rem;
+    }
+    .heading-6 {
+        font-size: 2.6rem;
+        padding-bottom: 1.6rem;
+    }
+    .step-description {
+        line-height: 1;
+    }
+    .step-img {
+        width: 110%;
+        height: 22rem;
+    }
+    .heading-software {
+        /* font-size: 2.6rem; */
+    }
+    .step-n-description {
+        line-height: 1;
+    }
+}
+
+
+/* Below 528px */
+
+@media (max-width: 33em) {
+    .grid-cols--3,
+    .under-section-who.grid-cols--3,
+    .grid-cols--2,
+    .grid--2-cols-where {
+        grid-template-columns: 1fr;
+        /* row-gap: 2.4rem; */
+        gap: 2rem;
+    }
+    .section-land {
+        display: flex;
+        height: 70vh;
+        /* position: relative; */
+        background-image: linear-gradient(rgba(6, 6, 6, 0.7), rgba(0, 0, 0, 0.7)), url(etc/img4.jpg);
+        background-size: cover;
+        color: fff;
+    }
+    .section-land {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .land {
+        padding: 0 0;
+    }
+    .section-how.grid-cols--3 {
+        grid-column: span;
+        grid-template-columns: 1fr;
+    }
+    /* .grid-cols--5 {
+        grid-template-columns: 1fr;
+    } */
+    .grid-cols--2-who {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        justify-items: center;
+    }
+    .grid-cols--2-who {
+        /* margin-right: 5rem;
+        margin-left: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem; */
+    }
+    .header,
+    .section-land,
+    .section-how,
+    .section-who,
+    .section-how-we,
+    .section-software,
+    .section-networking,
+    .section-where-are-we,
+    .footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .heading-primary {
+        font-size: 4.8rem;
+    }
+    .heading-software-second,
+    .heading-primary-under,
+    .heading-software {
+        font-size: 2rem;
+    }
+    .heading-3,
+    .heading-how-we,
+    .heading-6 {
+        font-size: 2.4rem;
+    }
+    .heading-5 {
+        font-size: 2.2rem;
+    }
+    .grid-cols--3 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .dynamic {
+        grid-column: span 2;
+        grid-column: -3/-1;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+    }
+    .who-imgs {
+        height: 30rem;
+    }
+    .paragraf-5 {
+        line-height: 2;
+        letter-spacing: 1.8px;
+    }
+    .step-text-box:nth-child(2) {
+        grid-row: 1;
+    }
+    .step-description {
+        line-height: 2rem;
+    }
+    /* .stepimg. { */
+    width: 100%;
+}
+
+.step-img {
+    width: 80%;
+}
+
+.step-n-img:nth-child(2) {
+    grid-row: 1;
+}
+
+.step-n-description {
+    line-height: 1.4;
+}
+
+.heading-networking {
+    font-size: 2.8rem;
+}
+
+
+}
+@media (max-width: 25em) {
+    .section-land {
+        display: flex;
+        /* height: 80vh; */
+        width: auto;
+        /* position: relative; */
+        background-image: linear-gradient(rgba(6, 6, 6, 0.7), rgba(0, 0, 0, 0.7)), url(etc/img4.jpg);
+        background-size: cover;
+        color: fff;
+    }
+    
+    .grid-cols--3 {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    
+    .paragraf-5 {
+        line-height: 1.3;
+        letter-spacing: 1.3px;
+    }
+    
+    .heading-software {
+        font-weight: normal;
+        font-size: 1.8rem;
+    }
+    
+    .software-descripiton {
+        font-size: 1.4rem;
+    }
+}
+
+/* - Font sizes (px) */
+
+/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
